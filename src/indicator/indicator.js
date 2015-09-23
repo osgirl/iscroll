@@ -158,7 +158,7 @@ Indicator.prototype = {
 			utils.addEvent(window, 'mousemove', this);
 		}
 
-		this.scroller._execEvent('beforeScrollStart');
+		this.scroller._execEvent('beforeScrollStart', e);
 	},
 
 	_move: function (e) {
